@@ -319,29 +319,29 @@ input[type=text]:focus, textarea:focus, .calc-input:focus {
         </svg>
       </div>
       <div>
-        <h1 class="card-title">Chuyen so tien thanh chu</h1>
-        <p class="card-sub">toanbx · v2.0</p>
+        <h1 class="card-title">Chuyển số tiền thành chữ</h1>
+        <p class="card-sub">chạy trên trình duyệt</p>
       </div>
     </div>
     <div class="card-body">
       <div class="field">
-        <label for="amount">So tien</label>
-        <input type="text" id="amount" placeholder="Nhap so tien" inputmode="decimal" autocomplete="off">
+        <label for="amount">Nhập số tiền</label>
+        <input type="text" id="amount" placeholder="nhập số tiền vào đây" inputmode="decimal" autocomplete="off">
       </div>
       <div class="field">
-        <label for="result">So tien bang chu</label>
-        <textarea id="result" readonly placeholder="Ket qua se hien thi tai day"></textarea>
+        <label for="result">Số tiền bằng chữ:</label>
+        <textarea id="result" readonly placeholder="hiển thị số tiền bằng chữ"></textarea>
       </div>
       <button class="btn-copy" type="button" onclick="copyText()">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <rect x="9" y="9" width="11" height="13" rx="2"/>
           <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
         </svg>
-        Sao chep ket qua
+        Sao chép số tiền bằng chữ để dán vào eoffice
       </button>
       <div class="field" style="margin-top:16px;margin-bottom:0">
-        <label for="note">Ghi chu</label>
-        <textarea id="note" class="note-area" placeholder="Nhap ghi chu tai day..."></textarea>
+        <label for="note">LƯU THÔNG TIN THƯỜNG SỬ DỤNG ĐỂ COPY-PASTE</label>
+        <textarea id="note" class="note-area" placeholder="nhập dữ liệu ghi chú ở đây...."></textarea>
       </div>
     </div>
   </section>
@@ -355,18 +355,18 @@ input[type=text]:focus, textarea:focus, .calc-input:focus {
         </svg>
       </div>
       <div>
-        <h1 class="card-title">May tinh</h1>
-        <p class="card-sub">Nhap bieu thuc roi Enter</p>
+        <h1 class="card-title">MÁY TÍNH NHANH</h1>
+        <p class="card-sub">nhập phép tính đơn giản rồi Enter</p>
       </div>
     </div>
     <div class="card-body">
       <div class="field" style="margin-bottom:0">
-        <label for="calcIn">Bieu thuc</label>
+        <label for="calcIn">Phép tính</label>
         <textarea class="calc-input" id="calcIn" placeholder="VD: 1.500.000 * 2 + 300.000" rows="2" autocomplete="off" spellcheck="false"></textarea>
         <div class="calc-hint">Ho tro + - * / · dinh dang so kieu Viet Nam</div>
       </div>
       <div class="calc-history" id="history"></div>
-      <button class="clear-btn" type="button" onclick="clearHistory()">Xoa lich su</button>
+      <button class="clear-btn" type="button" onclick="clearHistory()">Xoá lịch sử</button>
     </div>
   </section>
 </div>
