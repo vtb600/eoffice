@@ -239,6 +239,20 @@
       </svg>
       TRA CỨU HỒ SƠ TT
     </button>
+    <button
+      class="tab-btn"
+      role="tab"
+      id="tab-lx600"
+      aria-selected="false"
+      aria-controls="panel-lx600"
+      data-tab="lx600"
+    >
+      <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+        <path d="M14 3v6h6M8 13h8M8 17h5"/>
+      </svg>
+      HÓA ĐƠN XML
+    </button>
   </nav>
 
   <main class="panels">
@@ -248,6 +262,9 @@
     <section class="panel" role="tabpanel" id="panel-hstt" aria-labelledby="tab-hstt" hidden>
       <iframe src="tra_cuu_ho_so_thanh_toan_v6.html" title="Tra cuu ho so thanh toan"></iframe>
     </section>
+    <section class="panel" role="tabpanel" id="panel-lx600" aria-labelledby="tab-lx600" hidden>
+      <iframe src="lx600.html" title="Hoa don XML LX600"></iframe>
+    </section>
   </main>
 
   <script>
@@ -255,7 +272,8 @@
       var buttons = document.querySelectorAll(".tab-btn");
       var panels = {
         vnd: document.getElementById("panel-vnd"),
-        hstt: document.getElementById("panel-hstt")
+        hstt: document.getElementById("panel-hstt"),
+        lx600: document.getElementById("panel-lx600")
       };
 
       function activate(name) {
